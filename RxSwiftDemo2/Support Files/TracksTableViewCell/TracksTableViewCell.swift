@@ -14,6 +14,15 @@ class TracksTableViewCell: UITableViewCell {
     @IBOutlet weak var trackTitle: UILabel!
     @IBOutlet weak var trackArtist: UILabel!
     
+    public var cellTrack: Track! {
+        didSet {
+            trackImage.clipsToBounds = true
+            trackImage.layer.cornerRadius = 3
+            trackImage.loadImage(fromURL: cellTrack.trackArtWork)
+            trackTitle.text = cellTrack.name
+            trackArtist.text = cellTrack.artist
+        }
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()

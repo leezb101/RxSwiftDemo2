@@ -75,30 +75,65 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="thE-bc-P6c"/>
                     </view>
+                    <connections>
+                        <outlet property="albumsVCView" destination="PZL-eE-Cqb" id="Ysn-f5-cw3"/>
+                        <outlet property="tracksVCView" destination="LAY-RL-xEk" id="Uep-1D-CJk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pZP-Sq-cP5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="48" y="153"/>
         </scene>
-        <!--View Controller-->
+        <!--Album View Controller-->
         <scene sceneID="TX1-Lq-hMu">
             <objects>
-                <viewController id="n26-zO-Rep" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlbumViewController" id="n26-zO-Rep" customClass="AlbumViewController" customModule="RxSwiftDemo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ey-Ah-wFc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="2oX-kA-ua6">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ig1-Js-egl">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tQh-fp-odh">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2oX-kA-ua6" firstAttribute="leading" secondItem="wcw-g8-e0u" secondAttribute="leading" id="2As-QQ-ArW"/>
+                            <constraint firstItem="2oX-kA-ua6" firstAttribute="top" secondItem="7ey-Ah-wFc" secondAttribute="top" id="Klw-Xy-yGF"/>
+                            <constraint firstItem="wcw-g8-e0u" firstAttribute="trailing" secondItem="2oX-kA-ua6" secondAttribute="trailing" id="XG6-2X-JcC"/>
+                            <constraint firstItem="2oX-kA-ua6" firstAttribute="bottom" secondItem="7ey-Ah-wFc" secondAttribute="bottom" id="ddu-oQ-gbC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wcw-g8-e0u"/>
                     </view>
+                    <connections>
+                        <outlet property="albumsCollectionView" destination="2oX-kA-ua6" id="2aM-6k-IZ6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ge-Qm-OBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="699" y="-46"/>
         </scene>
-        <!--View Controller-->
+        <!--Track View Controller-->
         <scene sceneID="CV9-K0-E0G">
             <objects>
-                <viewController id="Fbj-lP-Vp9" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TrackViewController" id="Fbj-lP-Vp9" customClass="TrackViewController" customModule="RxSwiftDemo2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pfp-Gn-L1T">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="538"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -115,7 +150,11 @@
                             <constraint firstAttribute="trailing" secondItem="72i-cy-cnv" secondAttribute="trailing" id="VQg-p4-vJ1"/>
                             <constraint firstItem="72i-cy-cnv" firstAttribute="top" secondItem="pfp-Gn-L1T" secondAttribute="top" id="pCW-tC-CoS"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="GtQ-4G-qta"/>
                     </view>
+                    <connections>
+                        <outlet property="tracksTableView" destination="72i-cy-cnv" id="MCU-al-ksI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ie2-iL-puL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -35,8 +35,16 @@ class AlbumsCollectionViewCell: UICollectionViewCell {
         return result
     }()
     
+    public var album: Album! {
+        didSet {
+            albumImage.loadImage(fromURL: album.albumArtWork)
+            albumArtist.text = ""
+            albumTitle.text = album.name
+        }
+    }
+    
     private func backViewGenrator() {
-        
+        backView.loadImage(fromURL: album.albumArtWork)
     }
     
     override func prepareForReuse() {

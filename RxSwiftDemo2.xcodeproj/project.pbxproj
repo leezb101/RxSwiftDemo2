@@ -12,6 +12,10 @@
 		071F3098228572BE002C66B7 /* TracksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F3096228572BE002C66B7 /* TracksTableViewCell.swift */; };
 		071F3099228572BE002C66B7 /* TracksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071F3097228572BE002C66B7 /* TracksTableViewCell.xib */; };
 		071F309B228574EC002C66B7 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F309A228574EC002C66B7 /* Album.swift */; };
+		6F16BA83228C4CF60088E93E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16BA82228C4CF60088E93E /* Track.swift */; };
+		6F16BA85228C4DFA0088E93E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16BA84228C4DFA0088E93E /* Extensions.swift */; };
+		6F16BA87228C586A0088E93E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16BA86228C586A0088E93E /* HomeViewModel.swift */; };
+		6F16BA89228C5A2F0088E93E /* ReactiveExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16BA88228C5A2F0088E93E /* ReactiveExtensions.swift */; };
 		6F94A3D622830E24009C71FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94A3D522830E24009C71FB /* AppDelegate.swift */; };
 		6F94A3D822830E24009C71FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F94A3D722830E24009C71FB /* ViewController.swift */; };
 		6F94A3DD22830E25009C71FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F94A3DC22830E25009C71FB /* Assets.xcassets */; };
@@ -31,6 +35,10 @@
 		071F3097228572BE002C66B7 /* TracksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TracksTableViewCell.xib; sourceTree = "<group>"; };
 		071F309A228574EC002C66B7 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Album.swift; path = "RxSwiftDemo2/Support Files/TracksTableViewCell/Album.swift"; sourceTree = SOURCE_ROOT; };
 		522CE7898D03B7D0E02A5F85 /* Pods-RxSwiftDemo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo2.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemo2/Pods-RxSwiftDemo2.release.xcconfig"; sourceTree = "<group>"; };
+		6F16BA82228C4CF60088E93E /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		6F16BA84228C4DFA0088E93E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6F16BA86228C586A0088E93E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		6F16BA88228C5A2F0088E93E /* ReactiveExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveExtensions.swift; sourceTree = "<group>"; };
 		6F94A3D222830E24009C71FB /* RxSwiftDemo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftDemo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F94A3D522830E24009C71FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F94A3D722830E24009C71FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -119,6 +127,7 @@
 		6F94A3E822830F6E009C71FB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				6F16BA86228C586A0088E93E /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -138,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				071F309A228574EC002C66B7 /* Album.swift */,
+				6F16BA82228C4CF60088E93E /* Track.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +155,8 @@
 		6F94A3EB22830F93009C71FB /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				6F16BA84228C4DFA0088E93E /* Extensions.swift */,
+				6F16BA88228C5A2F0088E93E /* ReactiveExtensions.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -307,12 +319,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F94A3F622831268009C71FB /* AlbumViewController.swift in Sources */,
+				6F16BA87228C586A0088E93E /* HomeViewModel.swift in Sources */,
 				6F94A3D822830E24009C71FB /* ViewController.swift in Sources */,
 				071F309322856EEE002C66B7 /* AlbumsCollectionViewCell.swift in Sources */,
 				6F94A3D622830E24009C71FB /* AppDelegate.swift in Sources */,
 				6F94A3F422831054009C71FB /* HomeViewController.swift in Sources */,
+				6F16BA85228C4DFA0088E93E /* Extensions.swift in Sources */,
+				6F16BA83228C4CF60088E93E /* Track.swift in Sources */,
 				6F94A3F822831270009C71FB /* TrackViewController.swift in Sources */,
 				071F3098228572BE002C66B7 /* TracksTableViewCell.swift in Sources */,
+				6F16BA89228C5A2F0088E93E /* ReactiveExtensions.swift in Sources */,
 				071F309B228574EC002C66B7 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
