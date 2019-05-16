@@ -12,6 +12,8 @@
 		071F3098228572BE002C66B7 /* TracksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F3096228572BE002C66B7 /* TracksTableViewCell.swift */; };
 		071F3099228572BE002C66B7 /* TracksTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 071F3097228572BE002C66B7 /* TracksTableViewCell.xib */; };
 		071F309B228574EC002C66B7 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F309A228574EC002C66B7 /* Album.swift */; };
+		07CBB86C228D56420059899B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CBB86B228D56420059899B /* LoadingView.swift */; };
+		07CBB870228D56AD0059899B /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07CBB86F228D56AD0059899B /* LoadingView.xib */; };
 		6F16BA83228C4CF60088E93E /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16BA82228C4CF60088E93E /* Track.swift */; };
 		6F16BA85228C4DFA0088E93E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16BA84228C4DFA0088E93E /* Extensions.swift */; };
 		6F16BA87228C586A0088E93E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F16BA86228C586A0088E93E /* HomeViewModel.swift */; };
@@ -34,6 +36,8 @@
 		071F3096228572BE002C66B7 /* TracksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewCell.swift; sourceTree = "<group>"; };
 		071F3097228572BE002C66B7 /* TracksTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TracksTableViewCell.xib; sourceTree = "<group>"; };
 		071F309A228574EC002C66B7 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Album.swift; path = "RxSwiftDemo2/Support Files/TracksTableViewCell/Album.swift"; sourceTree = SOURCE_ROOT; };
+		07CBB86B228D56420059899B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		07CBB86F228D56AD0059899B /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		522CE7898D03B7D0E02A5F85 /* Pods-RxSwiftDemo2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftDemo2.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftDemo2/Pods-RxSwiftDemo2.release.xcconfig"; sourceTree = "<group>"; };
 		6F16BA82228C4CF60088E93E /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		6F16BA84228C4DFA0088E93E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 				071F3097228572BE002C66B7 /* TracksTableViewCell.xib */,
 			);
 			path = TracksTableViewCell;
+			sourceTree = "<group>";
+		};
+		07CBB86A228D54560059899B /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				07CBB86B228D56420059899B /* LoadingView.swift */,
+				07CBB86F228D56AD0059899B /* LoadingView.xib */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 		6F94A3C922830E24009C71FB = {
@@ -164,6 +177,7 @@
 		6F94A3EC22830FE8009C71FB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				07CBB86A228D54560059899B /* LoadingView */,
 				071F3095228572A9002C66B7 /* TracksTableViewCell */,
 				071F309022856ECF002C66B7 /* AlbumsCollectionViewCell */,
 				6F94A3D522830E24009C71FB /* AppDelegate.swift */,
@@ -251,6 +265,7 @@
 				071F309422856EEE002C66B7 /* AlbumsCollectionViewCell.xib in Resources */,
 				6F94A3F22283103A009C71FB /* Home.storyboard in Resources */,
 				6F94A3E022830E25009C71FB /* LaunchScreen.storyboard in Resources */,
+				07CBB870228D56AD0059899B /* LoadingView.xib in Resources */,
 				071F3099228572BE002C66B7 /* TracksTableViewCell.xib in Resources */,
 				6F94A3DD22830E25009C71FB /* Assets.xcassets in Resources */,
 			);
@@ -329,6 +344,7 @@
 				6F94A3F822831270009C71FB /* TrackViewController.swift in Sources */,
 				071F3098228572BE002C66B7 /* TracksTableViewCell.swift in Sources */,
 				6F16BA89228C5A2F0088E93E /* ReactiveExtensions.swift in Sources */,
+				07CBB86C228D56420059899B /* LoadingView.swift in Sources */,
 				071F309B228574EC002C66B7 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
